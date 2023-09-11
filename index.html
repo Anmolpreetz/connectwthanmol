@@ -447,6 +447,8 @@ li:hover{
   
 </body>
 <script>
+const submitButton=document.getElementById('submit');
+submitButton.addEventListener('click',saveData);
 
  function saveData(){
     var input1=document.getElementById("input1").value;
@@ -455,6 +457,11 @@ li:hover{
     localStorage.setItem("input1",input1);
     localStorage.setItem("input2",input2);
 
+let retriveData=(localStorage.getItem('input1')
+  let retriveData2=(localStorage.getItem('input2')
+  console.log(retriveData);
+    console.log(retriveData2);
+  
     document.getElementById('input1').value='';
     document.getElementById('input2').value='';
  }
