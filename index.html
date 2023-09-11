@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="portfolio.css">
+ <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="">
+  <title>Connect</title>
+  <style>
+    @import url(https://fonts.google.com/specimen/Fjalla+One);
+body{
+  max-height: 100%;
+  max-width: 100vp;
+ font-family: 
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Fjalla system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 800;
+}
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #3586ff;
+  overflow: hidden;
+}
+section .air{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+  background-size: 1000px 100px
+}
+section .air.air1{
+  animation: wave 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+section .air.air2{
+  animation: wave2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 15px;
+}
+section .air.air3{
+  animation: wave 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 25px;
+}
+section .air.air4{
+  animation: wave 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 30px;
+}
+@keyframes wave{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: 1000px; 
+  }
+}
+@keyframes wavw{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: -1000px; 
+  }
+}
+
+
+#outer{
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+i{
+  color:#3586ff ;
+  font-size: 1.6rem;
+}
+#p{
+display: grid;
+justify-content: center;
+width: 70vw;
+font-weight: 500;
+}
+
+#form{
+  border-radius: 30px;
+  font-weight: 500;
+}
+h2,h3{
+  display: grid;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #FBEEAC;
+  text-shadow: 1.5px 1.5px #997602;
+  font-size: 1.8rem;
+}
+h3{
+  font-size: 1.6rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.5rem;
+}
+.buttons{
+  display: grid;
+  justify-content: center;
+
+}
+.btt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  height: 35px;
+  width: 90vw;
+  border: none ;
+  border-radius: 30px;
+  background-color: #1D5D9B;
+  color: white;
+}
+.btt2{
+  display: flex;
+ justify-content: space-between;
+}
+.fa-instagram{
+  color: white;
+  padding-left: 8px;
+  font-weight: 600;
+}
+.fa-snapchat{
+   color: white;
+  padding-left: 8px;
+  font-weight: 650;
+}
+.fa-linkedin-in{
+  color: white;
+  padding-left: 8px;
+  font-weight: 650;
+}
+#dot{
+  padding-right: 8px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.dropdown{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 8px;
+  padding-top: 5px;
+}
+#con{
+font-size: 1.5rem;
+
+}
+#shake{
+ animation: shaking 0.8s 2 ;
+ animation-delay: 1s;
+ 
+}
+@keyframes shaking{
+  0%{transform: rotate(0deg);}
+  20%{transform: rotate(-2deg);}
+  30%{transform: rotate(-1deg);}
+  50%{transform: rotate(2deg);}
+  60%{transform: rotate(-1deg);}
+  70%{transform: rotate(0deg);}
+  100%{transform: rotate(0deg);}
+}
+#logo{
+  height: 60px;
+  width: 60px;
+ border-radius: 35px 35px 22px 22px;
+margin-left: 43vw;
+}
+.fa-font{
+  font-size: 3rem;
+  color: #ffc400;
+  position: relative;
+  animation: hang 17s infinite 1s  ;
+  margin-bottom: 50px;
+  padding-top: 50px
+  ;
+}
+
+@keyframes han{
+  0%{transform: rotate(0deg);}
+  10%{transform: rotate(-10deg);}
+  20%{transform:rotate(45deg)}
+  30%{transform: rotate(-20deg);}
+  40%{transform: rotate(90deg);}
+  50%{transform: rotate(-30deg);}
+  60%{transform: rotate(135deg);}
+    70%{transform: rotate(-40deg);}
+    80%{transform: rotate(180deg);}
+ 
+    100%{transform: rotate(3600deg);}
+  }
+@keyframes top{
+  0%{color: white; top:-100vh;}
+  25%{color: #ffc40085; top:2px;}
+50%{color: #ffc400c7; top:5px;}
+75%{color: #ffc400e8; top: 5px;}
+   100%{color: #ffc400; position: relative; transform:rotate(360deg);}
+}
+
+a{
+  text-decoration: none;
+  
+  color: white;
+}
+
+#ico{
+display: grid;
+justify-content: center;
+overflow: hidden;
+}
+button{
+  border: 2px solid transparent;
+
+}
+button:hover{
+  border: 2px solid #ffc400;
+}
+#form1{
+  display: none;
+}
+#form1{
+
+color: #3586ff;
+font-size: 1rem;
+margin-left: 5px
+}
+#exampleInputEmail1{
+margin-right: 5px;
+height: 30px;
+
+}
+.share-btn{
+  display: inline-block;
+  color: #ffff;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  text-align: center;
+}
+.share-btn.facebook{background-color: #3B5998;}
+.share-btn.twitter{background-color: color black; color: black;} 
+.share-btn.email{background-color: #444444;}
+.share-btn.what{background-color:#06750f ;}
+
+#sharelink{
+  text-align: center;
+   justify-content: space-around;
+   display: flex;
+  
+    
+    margin-top: 5px;
+}
+#container:hover+ #sharelink{
+display: flex;
+}
+
+.dropdown-item{
+  font-weight: 650;
+ padding-left: 10px;
+  color: #1D5D9B;
+}
+#left{
+  display: flex;
+  justify-content: flex-start;
+  
+}
+#last{
+  width: 280px;
+  text-align: left;
+}
+li{
+  width: 270px;
+  border: 2px solid transparent;
+}
+li:hover{
+  border: 1px solid black;
+}
+@media only screen and (max-height:730px){
+  .fa-font{
+    margin: 0px ;
+    padding: 0px 0px;
+    margin-bottom:20px;
+  }
+}
+
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  
+}
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+ </style>
+</head>
+<body>
+  
+  <section>
+
+    <div class="dropdown">
+      <a id="outer" class="btn btn-warning" href="#"  data-bs-toggle="dropdown" aria-expanded="false">
+       <i class="fa-solid fa-ellipsis"></i>
+      </a>
+    
+      <ul class="dropdown-menu">
+        <li id="container" ></a></li>
+
+        <div id="left" class="dropdown">
+          <a style="font-weight: 650; color: #1D5D9B;" id="last" class="btn btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Share this web
+          </a>
+        
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="https://www.facebook.com/sharer/sharer.php?u=example.org"><i style="margin-right: 3px;" class="fa-brands fa-facebook-f"></i>Facebook</a></li>
+            <li><a style="color: black;" class="dropdown-item" href="https://twitter.com/intent/tweet?url=myWebsite.com"><i style="margin-right: 2px; color: black;" class="fa-brands fa-x-twitter"></i>X</a></li>
+                <li><a class="dropdown-item" href="whatsapp://send?text=This is WhatsApp sharing example using link"       data-action="share/whatsapp/share"  
+                  target="_blank "  style="color: #06750f;"><i class="fa-brands fa-whatsapp" style="color: #06750f;font-size: 1.5rem;"></i> Whatsapp</a></li>
+                <li><a style="padding-left: 6px;" class="dropdown-item" href="mailto:?subject=<>&body=<Click the link>"title="Share by Email">
+               
+                  <i class="fa-regular fa-paper-plane" style="pa;"></i>  G-mail</a></li>
+                  <li style="border: none; :"><input style="font-weight: 550; padding-right:2px; margin-top:3px;margin-left:6px;" type="text" id="myInput" value="hello world"><button style="border: black; margin-left: 2px;" onclick="myFunctio()">Copy</button></li>
+                </ul>
+        </div>
+
+
+        <div id="sharelink">
+
+      
+        </div>
+          <li><a  class="dropdown-item" href="mailto:anmolsidhu918@gmail.com">Any suggestion </a></li>
+        <hr>
+
+
+        <div style="display: grid; justify-content: center;">
+      <p style="text-align: center;" id="p">Want a Website to upgrade your buisness?
+        <br>
+        <a href="mailto:anmolsidhu918@gmail.com">
+      <button  style="width: 150px; margin-top:4px;color: #1D5D9B; background-color: #ffc400; font-weight: 680;"  id="form">Connect</button></a></p>
+    </div>
+      
+        <li><a class="dropdown-item" href="https://wa.me/917347640850?text="></a></li>
+      </ul>
+    </div>
+    <div id="ico">
+    
+    <i class="fa-solid fa-font"></i></div>
+    
+  
+    <h3 id="con">LINKS</h2>
+
+      <div class="buttons">
+        
+        <button id="shake" class="popup btt" onclick="myFunct()">Website <span id="myPopup" class="popuptext">In a matter of Days :) </span></button>
+        
+
+ 
+  
+  <h3  id="con">CONNECT</h3>
+
+<button onclick="window.location.href='https://www.instagram.com/anmolssidhu_/'" class="btt btt2 insta"><i class="fa-brands fa-instagram"></i>Instagram  <a id="dot" href="#">></a></button>
+  <button onclick="window.location.href='https://WWW.linkedin.com/in/anmol-sidhu-115457290'" class="btt btt2"><i class="fa-brands fa-linkedin-in"></i>linkedin<a id="dot" href="#">></a></button>
+  <button onclick="window.location.href='https://t.snapchat.com/vZugcQ6N'"class="btt btt2"><i class="fa-brands fa-snapchat"></i>Snapchat<a id="dot" href="#">></a></button> 
+
+</div>
+
+<div class="icons">
+
+</div>
+<div style="position:absolute; bottom: 15vh; margin-left:4px;">
+<input style="width: 200px;" type="text" id="input1" placeholder=" Name"><br>
+<input style="width: 300px;"type=" text"  id="input2" placeholder=" Any suggestion/Feedback...">
+ <button  onclick="saveData()">Save me </button>
+</div> 
+    <div class='air air1'></div>
+    <div class='air air2'></div>
+    <div class='air air3'></div>
+    <div class='air air4'></div>
+  </section>
+
+  
+  
+</body>
+<script>
+
+ function saveData(){
+    var input1=document.getElementById("input1").value;
+    var input2=document.getElementById("input2").value;
+
+    localStorage.setItem("input1",input1);
+    localStorage.setItem("input2",input2);
+
+    document.getElementById('input1').value='';
+    document.getElementById('input2').value='';
+ }
+
+  document.querySelector('.dropdown-menu').addEventListener('click',function(event){
+    event.stopPropagation();
+  })
+
+var input=document.getElementById('saveServer').value;
+localStorage.setItem('server',input);
+
+document.getElementById('saveServer').value=localStorage.getItem('server')
+
+
+function myFunctio() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
+
+
+function myFunct() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+<script src="portfolio.js"></script>
+</html>
