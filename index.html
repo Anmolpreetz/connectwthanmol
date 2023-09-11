@@ -431,12 +431,26 @@ li:hover{
 
 <div class="icons">
   
+  
+   
+<form style="position:absolute; bottom: 15vh; margin-left:4px;" action="" name="submit-to-google-sheet">
+ 
+  <input placeholder="Name" name="name" type="text"><br>
+ 
+  <input name="email" type="text">
+  <input placeholder="Any suggestion/Feedback..." type="submit" name="submit">
+  <br>
+  <span style="color: #1D5D9B;" id="sucess"></span>
+</form>
+  
+  
+  <!--
 </div>
 <div style="position:absolute; bottom: 15vh; margin-left:4px;">
 <input style="width: 200px;" type="text" id="input1" placeholder=" Name"><br>
 <input style="width: 300px;"type=" text"  id="input2" placeholder=" Any suggestion/Feedback...">
  <button id="submit" onclick="saveData()">Save me </button>
-</div> 
+</div> -->
     <div class='air air1'></div>
     <div class='air air2'></div>
     <div class='air air3'></div>
@@ -448,6 +462,24 @@ li:hover{
 </body>
 <script>
   
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxNhFd0YcXsFyAo_G6j3l5vWmQ6T1IzCLLn0pfXI6njGBCT2VRTCT5J6dGxW6NbVRT_/exec'
+const form = document. forms ['submit-to-google-sheet']
+const sucess=document.getElementById('sucess')
+form. addEventListener('submit', e => {
+e .preventDefault ()
+fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+. then (response =>{
+  sucess.innerHTML='Thanks for your valueable time!.'
+ 
+  setTimeout(function(){
+    sucess.innerHTML="";
+ 
+  },5000)
+  form.reset();
+} )
+.catch (error => console.error('Error!',error.message))
+ 
+})
 
 
 
