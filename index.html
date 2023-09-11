@@ -447,20 +447,9 @@ li:hover{
   
 </body>
 <script>
-const submitButton=document.getElementById('submit');
-submitButton.addEventListener('click',saveData);
 
- function saveData(){
-    var input1=document.getElementById("input1").value;
-    var input2=document.getElementById("input2").value;
 
-    localStorage.setItem("input1",input1);
-    localStorage.setItem("input2",input2);
 
-  
-    document.getElementById('input1').value='';
-    document.getElementById('input2').value='';
- }
 
   document.querySelector('.dropdown-menu').addEventListener('click',function(event){
     event.stopPropagation();
